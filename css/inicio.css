@@ -1,0 +1,370 @@
+/* Carrusel */
+.carrusel{
+    margin-top: 60px;
+}
+.carousel .item {
+    height: 200px;
+}
+
+.item img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    min-height: 300px;
+    width: 100%;
+
+    max-height: 550px;
+}
+
+.carousel-inner {
+    z-index: -100;
+}
+
+.carousel-control {
+    z-index: 1;
+
+
+}
+@media screen and (min-width:700px) {
+    .carousel .item {
+        height: 50vh;
+    }
+
+    .item img {
+
+        top: -1%;
+        left: 0;
+        height: auto;
+        width: 100%;
+
+
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .carousel .item {
+        height: 70vh;
+    }
+
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        
+        width: 100%;
+
+
+    }
+
+}
+@media screen and (min-width:1600px) {
+        .carousel .item {
+        height: 50vh;
+    }
+}
+ /* Carrusel *    /
+/* RREDES */
+.item-redes{
+    display: flex;
+    background: #333;
+    width: 100%;
+    height: 74px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.iconos-redes{
+    display: flex;
+    padding: 22px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.iconos-redes:hover{
+    color:  rgba(0,23,28);
+}
+@media screen and (min-width:760px) {
+    .iconos-redes{
+    display: flex;
+    padding: 15px;
+    font-size: 40px;
+}
+    .item-redes{
+        height: 100px;
+        }
+}
+/* REDES */
+/* FINANCIAMIENTO */
+  .contenedor-financia {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: white;
+      margin: 10px;
+      box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.22);
+  }
+
+  .item-financia-titulo {
+      text-align: left;
+      padding: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      background: white;
+  }
+
+  .item-financia-info img {
+      width: 100%;
+  }
+
+  .item-financia-titulo h2 {
+      font-size: 20px;
+      background: white;
+  }
+
+  .item-financia-titulo p {
+      background: white;
+      width: 98px;
+      height: 30px;
+      border-bottom: 1px solid rgb(73, 68, 68, .4);
+      font-size: 15px;
+  }
+  
+
+  .item-financia-info {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      padding: 4px;
+  }
+
+  .item-financia-info p {
+      background: white;
+      margin-top: 10px;
+  }
+
+  @media screen and (min-width:480px) {
+      .contenedor-financia {
+          width: 60%;
+      }
+
+      .item-finacia-titulo h2 {}
+
+      .item-financia-info img {
+          width: 70%;
+          height: auto;
+      }
+
+      .item-financia-info p {
+          text-align: left;
+      }
+  }
+
+  @media screen and (min-width:760px) {
+      .contenedor-financia {
+          padding: 10px;
+      }
+  }
+
+  @media screen and (min-width:1000px) {
+      .item-financia-info {
+          font-size: 20px;
+      }
+  }
+/* FINANCIAMIENTO */
+/* RESCATE */
+.contenedor-rescate{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    margin: 10px;
+     box-shadow:1px 2px 1px rgba(0,0,0,0.22);
+}
+.item-rescate-titulo{
+     background: white;
+    text-align: right;
+    padding: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.item-rescate-titulo h2 {
+     background: white;
+    font-size: 20px
+}
+.item-rescate-titulo p {
+     background: white;
+    /* height:25px; */
+    width: 70px;
+    height: 30px;
+    border-bottom: 1px solid rgb(73, 68, 68,.4);
+}
+.item-rescate-info{
+     background: white;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    padding: 4px;
+}
+.item-rescate-info p {
+    margin-top: 10px;
+     background: white;
+}
+.item-rescate-info img{
+    width: 100%;
+}
+@media screen and (min-width:480px){
+   .contenedor-rescate{   
+    width: 60%;
+    }
+    .item-financia-info p {
+        text-align: left;
+    }
+    .item-rescate-titulo h2{
+    }
+    .item-rescate-info img{
+    width: 70%;
+    height: auto;
+}
+}
+@media screen and (min-width:760px){
+    .contenedor-rescate{
+        padding: 10px;
+    }
+}
+@media screen and (min-width:1000px){
+    .item-rescate-info{
+          font-size: 20px;
+    }
+}
+/* RESCATE */
+/* GALERIA */
+.adopta{
+    display: flex;
+    justify-content: center;  
+    align-content: center;
+    height: 90px; 
+}
+.adopta h2 {
+    display: flex;
+    align-content: center;
+    height: 50px;
+}
+.contenedor-galeria-item{
+    display: flex;
+    flex-direction: column;
+    background: url(../img/fondo-paws.jpg);
+    align-items: center;
+    padding: 10px;
+}
+.contenedor-galeria{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-content: center;
+    background: none;
+    width: 90%;
+}
+.item-imagen img {
+    width: 100%;
+    height: 100%;
+    max-width: 295px;
+    max-height: 198px;
+    min-height: 198px;
+    border-bottom: 1px 2px 1px rgba(0,0,0,0.22);
+}
+.item-imagen{
+    width: 94%;
+    height: 100%;
+    display: flex;
+    max-width: 295px;
+    max-height: 198px;
+    min-height: 198px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.item-info{
+    display: flex;
+    top:0;
+    width: 100%;
+    height: 100%;
+    max-width: 295px;
+    max-height: 198px;
+    /* min-width: 295px; */
+    min-height: 198px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0,0,0,0.8);
+    color: white;
+    position: absolute;
+    padding: 30px;
+    text-align: center;
+    
+}
+.mover-info{
+    top: -100%;
+    transition: all 1s;
+}
+.item-imagen:hover .mover-info{
+    top:0;
+    transition: all 1s;
+}
+.mover-info-derecha{
+    right: -100%;
+    transition: all 1s;
+}
+.item-imagen:hover .mover-info-derecha{
+    right: 0;
+    transition: all 1s;
+}
+.item-info h2{
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+.item-info p{
+    word-wrap: break-word;
+    width: 180px;
+}
+.proando{
+    width:100%;
+    height: 100px;
+}
+@media screen and (min-width:360px){
+    .contenedor-galeria{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: auto;
+        justify-content: center;
+    }
+    .item-info{
+        padding:0px;
+    }
+    .item-imagen{
+       
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:480px){
+    .contenedor-galeria{
+        justify-content: space-around;
+    }
+    .item-imagen{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:1000px){
+     .contenedor-galeria{
+        justify-content: center;
+    }
+    .item-imagen{
+        width: 25%;
+        margin-left: 20px
+    }
+}
+/* GALERIA*/

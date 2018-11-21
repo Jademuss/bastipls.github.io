@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive,sans-serif;
+}
+
+
+img{
+    max-width: 100%;
+
+    display: block;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+
+.contenedor-rescate-financia{
+    display: flex;
+    flex-direction: column;
+    background: url(../img/fondo-paws.jpg);
+}
+
+@media screen and (min-width:480px){
+    .contenedor-rescate-financia{
+        margin: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:760px){
+    .contenedor-rescate-financia{
+      padding:15px ;  
+    }
+}

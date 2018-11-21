@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/boostrap.min.css">
+    <link rel="stylesheet" href="css/formulariomain.css">
+    <link rel="manifest" href="/manifest.json">
+    <title>Mis perris </title>
+</head>
+<body>
+    <div class="menu-container">
+            <a href="index.html" class="container-icon">
+                <span class="icon-paw"></span>
+                <p class="icon-text">MISPERRIS</p>
+            </a>
+            <span class="icon-bars" id="btn-menu"></span>
+            <nav id="navegador">
+                <ul>
+                    <li class="item-user">
+                        <img src="img/perro-calle4.jpg">
+                        Bienvenido!
+                    </li>
+                    <li><a href="index.html" class="item-link">Inicio</a></li>
+                    <li><a href="formulario.html" class="item-link">Registro</a></li>
+                    <li><a href="listar_perro.html" class="item-link">Nuestros Perros</a></li>
+            
+                </ul>
+            </nav>
+        </div>
+        <div class="item-formulario">
+            <form method="post" action="crear_usuario" tabindex="6" onsubmit="return valida();">
+                <h1>Inscripción:</h1>
+                <div class="item-input">
+                    <label for="txtemail">Correo:</label>
+                    <input type="email" id="txtemail" name="txtemail" placeholder="Ingrese su correo" required/>
+                </div>
+                <div class="item-input">   
+                    <label for="txtrut" >Rut:</label>
+                    <input type="text" id="txtrut" name="txtrut" onkeyup="modificartexto()" maxlength="10" placeholder="Ingrese su rut" required>
+                </div>
+                <div class="item-input">
+                    <label for="txtname">Nombres:</label>
+                    <input type="text" id="txtname" name="txtname" placeholder="Ingrese nombre" required>
+                    <span></span>
+                </div>
+                <div class="item-input">
+                    <label for="txtdate">Fecha:</label>
+                    <input type="date" id="txtdate" name="txtdate" value="2001-01-01"  min="2001-01-01 " required>
+                </div>
+                <div class="item-input">  
+                    <label for="txtphone">Telefono:</label>
+                    <input type="number" id="txtphone" name="txtphone" placeholder="Ingrese telefono" required>
+                </div>
+                <div class="item-input">  
+                    <label for="txtRegion">Seleccione region: </label>
+                    <select id="txtRegion" name="txtregion" oninput="selectCity()">
+                    </select>
+                </div>    
+                 <div class="item-input">
+                    <label for="txtCity">Ciudad</label>
+                    <select id="txtCity" name="txtCity">
+                    </select>
+                </div>
+                <div class="item-input">
+                    <label for="sel-vivienda">Tipo vivienda:</label>
+                    <select  id="sel-vivienda" name="sel-vivienda">
+                        <option>Casa con patio grande</option>  
+                        <option>Casa con patio pequeño</option>
+                        <option>Casa sin patio</option>
+                        <option>Departamento</option>
+                    </select>
+                </div>
+                <div class="item-input-boton">
+                    <button type="submit" class="botones">Registrar</button>
+                </div>
+            </form>
+        </div>
+        <script src="js/app.js"></script>
+    <script src="js/javaformulario.js"></script>
+      <script src="js/javamenu.js"></script>
+</body>
+</html>

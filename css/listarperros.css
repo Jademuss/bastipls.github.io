@@ -1,0 +1,111 @@
+body{
+     background: url(../img/fondo-paws.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item-list {
+    margin-top: 69px;
+    width: 100%;
+    background: rgba(255, 255, 255, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     padding: 10px;
+
+}
+
+.item-list:last-child {
+    margin-bottom: 10px;
+}
+
+.item-list-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    border: .5px solid rgba(0, 0, 0, .3);
+
+}
+
+.item-list-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+     
+}
+.item-list-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+
+    
+}
+.item-list-img img{
+    border-radius: 15px;
+    max-width: 295px;
+    max-height: 198px;
+    min-height: 198px;
+    
+ 
+}
+.item-list-data {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 4px;
+    text-align: center;
+    border: .5px solid rgba(0, 0, 0, .3);
+ 
+}
+.item-list-data p {
+      word-wrap: break-word;
+}
+.item-list-data:last-child{
+  
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px;
+      
+}
+
+.item-list-des{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: .5px solid rgba(0, 0, 0, .3);
+}
+@media screen and (min-width:600px) {
+    .item-list {
+        width: 49%;
+
+    }
+    .flex-container{
+        justify-content: center;
+    }
+    .item-list:last-child {
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+}
+@media screen and (min-width:1250px) {
+    .flex-container{
+        justify-content: center;
+         
+    }
+
+.item-list {
+    width: 24%;
+    margin-right: 5px;
+    margin-left: 10px;
+    
+
+}
+}
