@@ -9,13 +9,3 @@
   }
 })( );
 
-(function() {
-console.log('dentro de la funcion');
-fetch('http://misperris.pythonanywhere.com/apilistaperros/?format=json')
-.then(data => data.json())
-.then(data => {
-  console.log(data)
-})
-
-
-})( );
