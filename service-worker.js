@@ -60,11 +60,26 @@ self.addEventListener( 'activate', function( e ) {
 });
 
 
+
 self.addEventListener('fetch', function(e) {
-  console.log('[ServiceWorker] Fetch', e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
-  );
-}); 
+  console.log('[Service Worker] Fetch', e.request.url);
+  var dataUrl = 'https://misperris.pythonanywhere.com/apilistaperros/?format=json';
+  if (e.request.url.indexOf(dataUrl) > -1) {
+  
+    e.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return fetch(e.request).then(function(response){
+          cache.put(e.request.url, response.clone());
+          return response;
+        });
+      })
+    );
+  } else {
+
+    e.respondWith(
+      caches.match(e.request).then(function(response) {
+        return response || fetch(e.request);
+      })
+    );
+  }
+});
