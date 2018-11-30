@@ -18,6 +18,7 @@ var filesToCache = [
     '/js/jquery.min.js',
     '/js/boostrap.min.js',
     '/js/app.js',
+    'js/getApi.js',
     '/js/javaformulario.js',
     '/js/javamenu.js',
     '/img/banner-1-big.jpeg',
